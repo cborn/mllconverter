@@ -1,0 +1,21 @@
+<html>
+    <body>
+    	<h1>Moodle Language Lesson > Language Lesson (Ruby) Converter</h1>
+        <b>Upload your languagelesson XML file to be converted.</b>
+        <form name='convert LL' method='post' action='review.php' enctype='multipart/form-data'>
+            <label for="file">languagelesson.xml: </label>
+            <input type="file" name="file" id="file"><br><br>
+            <b> Put the course backup folder in a web-accessible location (such as your localhost folder) and enter that domain below. The path must be relative to the code file (e.g. "./japn101")</b><br>
+            <label for="path">Path to course folder: </label>
+            <input type="text" name="path" id="path"><br><br>
+            <b>Since we can't download the files embedded directly from the Moodle servers, this script will replace the https://moodle.carleton.edu domain with a domain of your choosing.</b><br>
+            <b>If there is an external folder of audio files, put it in a web-accessible location (such as your localhost folder) and enter that domain below.</b><br>
+            <b>Make sure the folder name is the full name of the language in all lowercase (e.g. japanese).</b><br>
+            <b>Otherwise, leave this blank.</b><br>
+            <label for="domain">Domain for audio files: </label>
+            <input type="text" name="domain" id="domain">
+	    <br><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>
